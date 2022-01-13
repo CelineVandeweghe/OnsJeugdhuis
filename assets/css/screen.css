@@ -1,0 +1,315 @@
+body, body a{
+    font-family: roboto, sans-serif;
+    color: #00325F; 
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent; 
+}
+
+#hamburger{
+    opacity:0;
+}
+
+header{
+    position: relative;
+    height: 20vw;
+    margin-bottom: 8vw;
+}
+
+header div{
+    position: relative;
+    height: 16.5vw;
+}
+
+header div img:first-of-type{
+    width: 25vw;
+    position: absolute;
+    z-index:1;
+    margin-left: 6vw;
+    margin-top: 4vw;
+    background-color: white;
+    padding-right: 5vw;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+}
+
+header div img:nth-of-type(2){
+    width: 70vw; 
+    height: 20vw; 
+    object-fit: cover;
+    position: absolute;
+    right: 6vw;
+    top: 3vw;
+    z-index:0;
+}
+
+header nav{
+    z-index: 5;
+    position: absolute;
+    justify-content: center;
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: 11.5vw;
+    margin-right: 11.5vw;
+    margin-top: -16.5vw;
+}
+
+nav li{
+    background-color: #F3A600;
+    font-size: 1vw;
+    text-transform: uppercase;
+    padding: 0.9vw;
+    margin: 1vw;
+    display:inline-block;
+    width: 11vw;
+    text-align: center;
+}
+
+#here, #here:hover{
+    background-color: #EB5F5E;
+    color: #00325F; 
+}
+
+nav li:hover{
+    background-color: #FDEDCC; 
+    color: #8D3938;
+}
+
+h1{
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 4vw;
+}
+
+h2, figcaption{
+    text-transform: uppercase;
+}
+
+strong{
+    font-weight: bold;
+}
+
+footer{
+    background-color: #F3A600;
+    padding:2%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8vw;
+    height: 8vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+}
+
+footer img{
+    width: 5vw;
+}
+
+address{
+    display: block;
+    margin-left: 2vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.2vw
+}
+
+footer div:first-of-type{
+    display: flex;
+}
+
+footer div:nth-of-type(2){
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+footer div a{
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: 1.5vw;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+footer a{
+    font-size: 1.5vw;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-self: end;
+}
+
+footer a:hover{
+    opacity: 20%;
+}
+
+@media all and (max-width: 37rem){
+    footer{
+        margin-left: 0vw;
+        margin-right: 0vw;
+        margin-bottom: 0vw;
+        padding: 5vw;
+        margin-top: 27vw;
+        line-height: 1.8vw;
+    }
+    
+    footer address{
+        margin-left: 3vw;
+    }
+
+    footer div a, footer a{
+        font-size: 2.5vw;
+    }
+
+    footer div:nth-of-type(2){
+        margin-left: -5vw;
+    }
+
+    header{
+        position: sticky;
+        top: 0px;
+        height: 60vw;
+        margin-bottom: 3vw;
+    }
+
+    #hamburger{
+        position: absolute;
+        z-index: 2;
+        opacity: 100;
+        background-color: #F3A600;
+        padding-left: 50vw;
+        padding-right: 50vw;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 33.5vw;
+        height: 8vw;
+    }
+    
+    .test{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        display: block;
+        width: 5vw;
+        height: 5vw;
+        margin: -1.5vw auto 0 auto;
+        cursor: pointer;
+    }
+
+    .test2{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        display: block;
+        width: 5vw;
+        height: 5vw;
+        margin: 0vw auto 0 auto;
+        cursor: pointer;
+    }
+
+    #test div{
+        position: relative;
+        height: 0.5vw;
+        background-color: #00325F;
+        transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width, 0.3s ease right;
+        border-radius: 0;
+    }
+    
+    #test div:first-child{
+        width: 4vw;
+        margin-top: 0vw;
+        margin-right: 0vw;
+        margin-bottom: 1vw;
+    }
+    
+    #test div:last-child{
+        width: 4vw;
+        top: 0vw;
+        margin-right: 0vw;
+        margin-bottom: 1vw;
+    }
+    
+    #test div:nth-child(2){
+        width: 4vw;
+        margin-top: 0vw;
+        margin-right: 0vw;
+        margin-bottom: 1vw;
+    }
+    
+    .line1{
+        width: 4vw;
+        margin-top: 0vw;
+        margin-right: 0vw;
+        transform: rotateZ(45deg);
+        margin-bottom: -5vw;
+    }
+    
+    .line2{
+        opacity: 0
+    }
+    
+    .line3{
+        width: 4vw;
+        margin-top: -3vw;
+        margin-right: 0vw;
+        transform: rotateZ(-45deg);
+        margin-bottom: 1vw;
+    }
+
+    .hidden{
+        display:none;
+    }
+
+    header div img:nth-of-type(2){
+        width: 100vw; 
+        height: 60vw; 
+        object-fit: cover;
+        position: absolute;
+        object-position: -90% -90%;
+        right: 0vw;
+        top: 0vw;
+        z-index:0;
+    }
+
+    header div img:first-of-type{
+        width: 40vw;
+        position: absolute;
+        z-index:1;
+        margin-top: 4vw;
+        margin-left: 0;
+        background-color: white;
+        padding-left: 30vw;
+        padding-right: 30vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        }
+
+    header nav{
+            z-index: 2;
+            position: absolute;
+            justify-content: center;
+            display:flex;
+            flex-wrap: wrap;
+            margin-top: 43vw;
+            margin-left: 0;
+        }
+        
+    nav li{
+            background-color: #F3A600;
+            font-size: 2vw;
+            text-transform: uppercase;
+            padding: 2.5vw;
+            margin: 0vw;
+            display:inline-block;
+            width: 95vw;
+            text-align: center;
+        }
+
+    nav li:hover{
+            background-color: #F3A600
+        }
+}

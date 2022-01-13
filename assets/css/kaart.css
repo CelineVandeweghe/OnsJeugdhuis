@@ -1,0 +1,345 @@
+main{
+    margin-right: 13vw;
+    margin-left: 13vw;
+    line-height: 2vw;
+}
+
+main div{
+    display: flex
+}
+
+main p, main li, main a, input, label, main address{
+    font-size: 1.3vw;
+}
+
+#map{
+    width: 30vw;
+    height: 30vw;
+}
+
+#marker{
+    color: #926400;
+    font-size: 2.5vw;
+}
+
+#marker2{
+    color: #8D3938;
+    font-size: 2.5vw;
+}
+
+main div div:nth-of-type(2){
+    display: block;
+    margin-left: 4vw;
+}
+
+form{
+    background-color: #F3A600;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 3vw;
+}
+
+label{
+    font-weight: bold;
+    width: 13vw;
+    position: absolute;
+}
+
+label:nth-of-type(2){
+    margin-left: 33vw
+}
+
+label:nth-of-type(3){
+    margin-top: 6.5vw;
+}
+
+label:nth-of-type(4){
+    margin-left: 33vw;
+    margin-top: 6.5vw;
+}
+
+label:nth-of-type(5){
+    margin-top: 13vw;
+}
+
+input{
+    box-sizing: border-box;
+    width: 30vw;
+    height: 2.6vw;
+    position: absolute;
+    border: none;
+    padding-left: 0.5vw;
+    padding-top: 0.3vw;
+    color: #00325F;
+    font-size: 1vw
+}
+
+input:first-of-type{
+    margin-top: 2.5vw;
+}
+
+input:nth-of-type(2){
+    margin-top: 2.5vw;
+    margin-left: 33vw;
+}
+
+input:nth-of-type(3){
+    margin-top: 9vw;
+}
+
+input:nth-of-type(4){
+    position: absolute;
+    margin-top: 9vw;
+    margin-left: 33vw;
+}
+
+textarea{
+    margin-top: 15.5vw;
+    width: 62.4vw;
+    height: 7vw;
+    border: none;
+    margin-bottom: 7vw;
+    padding-top: 0.5vw;
+    padding-left: 0.5vw;
+    font-size: 1vw;
+    color: #00325F; 
+}
+
+input::placeholder, textarea::placeholder{
+    color: #66849F;
+    font-style: italic;
+    font-size: 1vw;
+}
+
+input:nth-of-type(5){
+    margin-top: 27vw;
+    margin-left: -41.5vw;
+    text-transform: uppercase;
+    font-size: 1.3vw;
+    font-weight: bolder;
+    height: 4vw;
+    width: 20vw;
+}
+
+input:nth-of-type(5):hover{
+    background-color: #00325F;
+    color: #EE7F7E 
+}
+
+#bedankt{
+    font-size: 1.2vw;
+    font-style: italic;
+    margin-top: 2vw;
+    text-align: center;
+}
+
+#tel, #langskomen, #contact, #social{
+    list-style-type: disc;
+    margin-left: 1.5vw;
+}
+
+.normal{
+    background-color: #EB5F5E; 
+}
+
+.change{
+    background-color: #FBDFDF;
+    color: #66849F; 
+}
+
+main div div:nth-of-type(2) p:not(li>p){
+    margin-bottom: 1vw;
+}
+
+main div div:nth-of-type(2) ul ul:first-of-type{
+    margin-left: 4.8vw;
+}
+
+main div div:nth-of-type(2) ul address, main div div:nth-of-type(2) ul address+p, main div div:nth-of-type(2) ul ul+p{
+    margin-left: 2.2vw;
+}
+
+#social a{
+    color: #F3A600;
+    font-size: 2.5vw;
+    margin-right: 2vw;
+}
+
+#social a:hover{
+    color: #FDEDCC;
+}
+
+#social ul{
+    display: flex;
+    margin-left: 0vw;
+    margin-top: 1vw;
+}
+
+main div div:nth-of-type(2) a:first-of-type{
+    font-weight: bold;
+    color: #8D3938; 
+}
+
+@media all and (max-width: 37rem){
+    main{
+        margin: 0;
+    }
+
+    main p, main li, main address{
+        font-size: 1.5vw;
+        line-height: 2.5vw;
+    }
+
+    main div{
+        display: block;
+    }
+
+    #map{
+        width: 100vw;
+        height: 30vw;
+        margin-bottom: 4vw;
+    }
+    
+    #marker{
+        color: #926400;
+        font-size: 5vw;
+    }
+    
+    #marker2{
+        color: #8D3938;
+        font-size: 5vw;
+    }
+
+    main div div:nth-of-type(2){
+        margin-left: 15vw;
+        width: 70vw;
+    }
+
+    #social a, #social a:hover{
+        color: #F3A600;
+        font-size: 5vw;
+        margin-right: 4vw;
+    }
+    
+    #social ul{
+        display: flex;
+        margin-left: 0vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    form{
+        background-color: #F3A600;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        padding-left: 14vw;
+        padding-right: 14vw;
+        margin-top: 3vw;
+    }
+    
+    label{
+        font-weight: bold;
+        width: 72vw;
+        position: relative;
+    }
+    
+    input{
+        box-sizing: border-box;
+        width: 72vw;
+        height: 4vw;
+        position: relative;
+        border: none;
+        padding-left: 0.5vw;
+        padding-top: 0.3vw;
+        color: #00325F;
+        font-size: 1vw;
+        margin: 0;
+    }
+    
+    input::placeholder, textarea::placeholder{
+        color: #66849F;
+        font-style: italic;
+        font-size: 1vw;
+    }
+    
+    input:nth-of-type(5), input:nth-of-type(5):hover{
+        text-transform: uppercase;
+        font-size: 1.8vw;
+        font-weight: bolder;
+        height: 8vw;
+        width: 40vw;
+    }
+    
+    #bedankt{
+        font-size: 1.2vw;
+        font-style: italic;
+        margin-top: 2vw;
+        text-align: center;
+    }
+
+    label:nth-of-type(2){
+        margin-left: 0vw;
+    }
+    
+    label:nth-of-type(3){
+        margin-top: 6.5vw;
+    }
+    
+    label:nth-of-type(4){
+        margin-left: 0vw;
+        margin-top: 6.5vw;
+    }
+    
+    label:nth-of-type(5){
+        margin-top: 13vw;
+    }
+
+    input:first-of-type{
+        margin-top: 1vw;
+        margin-bottom: 4vw;
+    }
+    
+    input:nth-of-type(2){
+        margin-top: 1vw;
+        margin-left: 0vw;
+        margin-bottom: 4vw;
+    }
+    
+    input:nth-of-type(3){
+        margin-top: 9vw;
+        margin-top: 1vw;
+        margin-bottom: 4vw;
+    }
+    
+    input:nth-of-type(4){
+        position: relative;
+        margin-top: 9vw;
+        margin-left: 0vw;
+        margin-top: 1vw;
+        margin-bottom: 4vw;
+    }
+    
+    textarea{
+        margin-top: 1vw;
+        width: 72vw;
+        height: 12vw;
+        border: none;
+        margin-bottom: 0vw;
+        padding-top: 0.5vw;
+        padding-left: 0.5vw;
+        font-size: 1vw;
+        color: #00325F; 
+    }
+    
+    input:nth-of-type(5), input:nth-of-type(5):hover{
+        margin-top: 4vw;
+        margin-left: 20vw;
+        text-transform: uppercase;
+        font-size: 1.8vw;
+        font-weight: bolder;
+        height: 8vw;
+        width: 30vw;
+    }
+}

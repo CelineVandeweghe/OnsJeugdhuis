@@ -1,0 +1,101 @@
+main img{
+    width: 22vw;
+    height: 38vw;
+    object-fit: cover;
+}
+
+main div{
+    display: flex;
+}
+
+main div div{
+    display: block;
+    margin-left: 3vw;
+}
+
+main div div p:first-of-type, main div div p:nth-of-type(2){
+    margin-bottom: 3vw;
+}
+
+main div div ul{
+    margin-bottom: 2vw;
+}
+
+main div div li{
+    list-style-type: disc;
+    margin-left: 1.5vw;
+}
+
+main div div div{
+    display: flex;
+}
+
+main p, main li, main a{
+    font-size: 1.3vw;
+}
+
+main a{
+    text-transform: uppercase;
+    padding-top: 2vw;
+    height: 4vw;
+}
+
+main a:first-of-type{
+    background-color: #EB5F5E;
+    margin-bottom: 0vw;
+    margin-left: -2.8vw;
+    width: 20vw;
+    text-align: center;
+}
+
+main a:first-of-type:hover{
+    background-color: #F4A6A6
+}
+
+main a:nth-of-type(2){
+    background-color: #F3A600;
+    margin-left: 2vw;
+    width: 20vw;
+    text-align: center;
+}
+
+main a:nth-of-type(2):hover{
+    background-color: #FDEDCC;
+}
+
+@media all and (max-width: 37rem){
+    main div{
+        display: block;
+    }
+
+    main img{
+        width: 100vw;
+        height: 30vw;
+        margin-bottom: 4vw;
+    }
+
+    main div div{
+        margin-left: 10vw;
+        width: 80vw;
+        margin-bottom: 10vw;
+    }
+
+    main div div div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main div div div a{
+        position: relative;
+        padding-left: 15vw;
+        padding-right: 15vw;
+        padding-top: 3vw;
+        margin-top: 2vw;
+        height: 5vw;
+        width: 30vw;
+    }
+
+    main a:first-of-type{
+        margin-left: 2vw;
+    }
+}

@@ -1,0 +1,92 @@
+main{
+    margin-right: 13vw;
+    margin-left: 13vw;
+    line-height: 2vw;
+}
+
+main div{
+    display: flex;
+}
+
+main img{
+    width: 22vw;
+    height: 40vw;
+    object-fit: cover;
+}
+
+main div div{
+    display: block;
+    margin-left: 3vw;
+}
+
+main p, main li, main a{
+    font-size: 1.3vw;
+}
+
+main div div p:first-of-type{
+    margin-bottom: 3vw;
+}
+
+main div div ul{
+    margin-bottom: 3vw;
+}
+
+main li{
+    list-style-type: disc;
+    margin-left: 1.5vw;
+}
+
+main div ul a, main div p a{
+    font-weight: bold;
+    color: #8D3938; 
+}
+
+#terug{
+    position: absolute;
+    text-transform: uppercase;
+    background-color: #F3A600;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 2vw;
+    margin-top: 5vw;
+    height: 4vw;
+}
+
+#terug:hover{
+    background-color: #FDEDCC
+}
+
+@media all and (max-width: 37rem){
+    main{
+        margin: 0;
+    }
+
+    main div{
+        display: block;
+    }
+
+    main img{
+        width: 100vw;
+        height: 30vw;
+        margin-bottom: 3vw;
+    }
+
+    main div div{
+        margin-left: 10vw;
+        width: 80vw;
+        margin-bottom: 10vw;
+    }
+
+    main div div p:last-of-type{
+        margin-bottom: 8vw;
+    }
+
+    #terug{
+        position: relative;
+        padding-left: 20vw;
+        padding-right: 20vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        margin-left: 15vw;
+    }
+}

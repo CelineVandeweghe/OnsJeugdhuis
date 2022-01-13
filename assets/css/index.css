@@ -1,0 +1,424 @@
+#grid{
+    display:grid;
+    grid-template-columns: [first] 17vw [line2] 4vw [line3] auto [line4] 4vw[line5] 25vw [line6];
+    grid-template-rows: [row1-start] 15vw [row2] 4vw [row3] 20vw [row4] 20vw [row5] 15vw [row6];
+}
+
+main{
+    margin-left: 6vw;
+    margin-right: 6vw;
+}
+
+main p{
+    position: absolute;
+    z-index: 2;
+    margin-top: 3vw;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    line-height: 1.6vw;
+    font-size: 1vw;
+}
+
+h3{
+    font-size: 1.8vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-left: 8vw;
+    margin-top: 10vw;
+    line-height: 2vw;
+}
+
+h3:first-of-type{
+    margin-top: 25%
+}
+
+h3:nth-of-type(2){
+    margin-top: 30%
+}
+
+main div:first-of-type{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
+}
+
+main div div:first-of-type img{
+    width: 17vw; 
+    height: 12vw; 
+    object-fit: cover;
+    margin-bottom: 0;
+    z-index: 0;
+    position: absolute;
+}
+main div div:nth-of-type(1) h2{
+    background-color: #F3A600;
+    font-size: 1vw;
+    padding: 1vw;
+    text-align: center;
+    margin-top: 12.5vw;
+    height: 1vw;
+    width: 15vw; 
+    transition: height 1s, margin-top 1s;
+    transition-delay: 0.5s, 0.5s;
+    position: absolute;
+    z-index: 1;
+}
+
+main div div:nth-of-type(1) h2:hover{
+    height: 13.5vw;
+    margin-top: 0vw;
+}
+
+main div:nth-of-type(2){
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    position: relative;
+}
+
+main div div:nth-of-type(2) img{
+    width: 17vw;
+    height: 20vw;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+    margin-top: 3.5vw;
+}
+
+main div div:nth-of-type(2) h2{
+    background-color: #00325F;
+    font-size: 1vw;
+    padding: 1vw;
+    text-align: center;
+    color: #FDEDCC; 
+    height: 1vw;
+    width: 15vw;
+    transition: height 1s;
+    transition-delay: 0.5s;
+    position: absolute;
+    z-index: 1;
+}
+
+main div div:nth-of-type(2) h2:hover{
+    height: 21.5vw;
+}
+
+main div div:nth-of-type(2) p{
+    color: #FDEDCC; 
+    margin-top: 3vw;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    line-height: 1.6vw;
+    font-size: 1vw;
+}
+
+main div:nth-of-type(3){
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    position: relative;
+}
+
+main div div:nth-of-type(3) img{
+    width: 40vw;
+    height: 39vw;
+    object-fit: cover;
+    object-position: 20% 40%;
+    position: absolute;
+    margin-top: 3.5vw;
+    z-index: 0;
+}
+
+main div div:nth-of-type(3) h2{
+    background-color: #EB5F5E;
+    position: absolute;
+    z-index: 1;
+    width: 38vw;
+    transition: height 1s;
+    transition-delay: 0.5s;
+    font-size: 1vw;
+    padding: 1vw;
+    text-align: center;
+    height: 1vw;
+}
+
+main div div:nth-of-type(3) h2:hover{
+    height: 40.5vw;
+}
+
+main div:nth-of-type(4){
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    position: relative;
+}
+
+main div div:nth-of-type(4) img{
+    width: 25vw;
+    height: 39vw;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+    margin-top: 3.5vw;
+}
+
+main div div:nth-of-type(4) h2{
+    background-color: #F3A600;
+    font-size: 1vw;
+    padding: 1vw;
+    text-align: center;
+    position: absolute;
+    width: 23vw;
+    height: 1vw;
+    z-index: 1;
+    transition: height 1s;
+    transition-delay: 0.5s;
+}
+
+main div div:nth-of-type(4) h2:hover{
+    height: 40.5vw;
+}
+
+main div:nth-of-type(5){
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    position: relative;
+}
+
+main div div:nth-of-type(5) img{
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+    object-position: 10% 40%;
+    position: absolute;
+    z-index: 0;
+}
+
+main div div:nth-of-type(5) h2{
+    background-color: #EB5F5E;
+    font-size: 1vw;
+    padding: 1vw;
+    text-align: center;
+    position: absolute;
+    height: 1vw;
+    width: 86vw;
+    z-index: 1;
+    transition: height 1s, margin-top 1s;
+    transition-delay: 0.5s, 0.5s;
+    margin-top: 15.5vw;
+}
+
+main div div:nth-of-type(5) h2:hover{
+    margin-top: 0vw; 
+    height: 16.5vw;
+}
+
+
+
+@media all and (max-width: 37rem){
+    main{
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+    #grid{
+        display: block;
+    }
+    
+    h3{
+        font-size: 1.8vw;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        line-height: 2vw;
+    }
+    h3:first-of-type{
+        margin-top: 32vw;
+        margin-bottom: 1vw;
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+    h3:last-of-type{
+        margin: 0vw;
+    }
+    main div:first-of-type{
+        position: relative;
+        margin: 0;
+    }
+    
+    main div div:first-of-type img{
+        width: 100vw; 
+        height: 30vw; 
+        object-fit: cover;
+        object-position: 30% 30%;
+        z-index: 0;
+        position: relative;
+        margin: 0;
+    }
+
+    main div div:nth-of-type(1) h2, main div div:nth-of-type(1) h2:hover{
+        background-color: #F3A600;
+        font-size: 2vw;
+        padding-top: 2vw;
+        text-align: center;
+        height: 16vw;
+        width: 98vw; 
+        position: relative;
+        z-index: 1;
+        margin: 0;
+        margin-bottom: 4vw;
+    }
+    
+    main div:nth-of-type(2){
+        position: relative;
+        margin: 0;
+    }
+    
+    main div div:nth-of-type(2) img{
+        width: 100vw; 
+        height: 30vw; 
+        object-fit: cover;
+        object-position: 20% 20%;
+        z-index: 0;
+        position: relative;
+        margin: 0;
+        margin-bottom: 5vw
+    }
+    
+    main div div:nth-of-type(2) h2, main div div:nth-of-type(2) h2:hover{
+        background-color: #00325F;
+        font-size: 2vw;
+        padding-top: 2vw;
+        text-align: center;
+        height: 16vw;
+        width: 98vw; 
+        color: #FDEDCC; 
+        position: absolute;
+        z-index: 1;
+        margin-top: 30.5vw;
+        margin-bottom: 4vw;
+    }
+    
+    main div:nth-of-type(3){
+        position: relative;
+        margin: 0;
+    }
+    
+    main div div:nth-of-type(3) img{
+        width: 100vw; 
+        height: 30vw; 
+        object-fit: cover;
+        object-position: 50% 50%;
+        z-index: 0;
+        position: relative;
+        margin: 0;
+        margin-top: 18vw;
+    }
+    
+    main div div:nth-of-type(3) h2, main div div:nth-of-type(3) h2:hover{
+        background-color: #EB5F5E;
+        position: relative;
+        font-size: 2vw;
+        padding-top: 2vw;
+        text-align: center;
+        height: 16vw;
+        width: 98vw; 
+        margin: 0;
+    }
+    
+    main div:nth-of-type(4){
+        position: relative;
+        margin: 0;
+    }
+    
+    main div div:nth-of-type(4) img{
+        width: 100vw; 
+        height: 30vw; 
+        object-fit: cover;
+        object-position: 30% 30%;
+        z-index: 0;
+        position: relative;
+        margin: 0;
+        margin-top: 4vw;
+    }
+    
+    main div div:nth-of-type(4) h2, main div div:nth-of-type(4) h2:hover{
+        background-color: #F3A600;
+        font-size: 2vw;
+        padding-top: 2vw;
+        text-align: center;
+        height: 16vw;
+        width: 98vw; 
+        position: absolute;
+        z-index: 1;
+        margin: 0;
+    }
+    
+    main div:nth-of-type(5){
+        position: relative;
+        margin: 0;
+    }
+    
+    main div div:nth-of-type(5) img{
+        width: 100vw; 
+        height: 30vw; 
+        object-fit: cover;
+        z-index: 0;
+        position: relative;
+        margin: 0;
+        margin-top: 10vw;
+    }
+    
+    main div div:nth-of-type(5) h2, main div div:nth-of-type(5) h2:hover{
+        background-color: #EB5F5E;
+        font-size: 2vw;
+        padding-top: 2vw;
+        text-align: center;
+        height: 16vw;
+        width: 98vw; 
+        position: absolute;
+        z-index: 1;
+        margin: 0;
+        margin-bottom: 24vw;
+    }
+
+    #p1, #p2, #p3, #p4, #p5{
+        position: absolute;
+        z-index: 4;
+        font-size: 0.5rem;
+
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
+
+    #p1{
+        margin-top: -18vw;
+        line-height: 5.5vw;
+    }
+
+    #p2{
+        margin-top: 35vw;
+        line-height: 5.5vw;
+    }
+
+    #p3{
+        margin-top: -13.5vw;
+        line-height: 2.5vw;
+    }
+
+    #p4, #p5{
+        margin-top: 6vw;
+        line-height: 2.5vw;
+    }
+}

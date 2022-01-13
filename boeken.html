@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ons Jeugdhuis</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <script src="https://kit.fontawesome.com/2b9b9b81f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/screen2.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/boeken.css">
+    <script src="assets/js/boeken.js"></script>
+    <script src="assets/js/screen.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/logo.svg" alt="Logo Ons Jeugdhuis">
+            <img src="images/afbeelding6.jpg" alt="Foto jongeren bij grafitti">
+        </div>
+        <div id="hamburger">
+            <div id="test">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="overons.html">over ons</a></li>
+                <li><a href="agenda.html">kalender</a></li>
+                <li id="here"><a href="zaalverhuur.html">zaalverhuur</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Boek een zaal</h1>
+        <div id="vorig"></div>
+        <div id="keuze"></div>
+        <div>
+            <div id="fase1">
+                <h2>Welke zaal wilt u boeken?</h2>
+                <div>
+                    <figure>
+                        <img src="images/biljart.jpg" alt="Foto café met biljart">
+                        <figcaption id="f1">Café</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/droomzaal.jpg" alt="Foto versiering droomzaal">
+                        <figcaption id="f2">Droomzaal</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/afbeelding3.jpg" alt="Foto jongeren in de lounge">
+                        <figcaption id="f3">Lounge</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div id="fase2">
+                <label for="datum">Wanneer wil je de zaal boeken?</label>
+                <input type="date" id="datum" name="datum" value="2022-01-26" min="2022-01-01" max="2023-01-01" required>
+                <label for="startuur">Kies je startuur.</label>
+                <input type="time" id="startuur" name="startuur" min="09:00" max="22:00" required>
+                <label for="einduur">Kies je einduur.</label>
+                <input type="time" id="einduur" name="einduur" min="10:00" max="23:00" required>
+                <button id="naar3">Ga verder</button>
+            </div>
+            <div id="fase3">
+                <label for="personen">Hoeveel personen zullen er ongeveer aanwezig zijn?</label>
+                <input type="number" id="personen" name="personen" min="1" max="100" required>
+                <label for="reden">Waarom wil je de zaal huren?</label>
+                <textarea id="reden" required></textarea>
+                <fieldset>
+                    <legend>Extra aanvraag</legend>
+                    <input type="checkbox" id="popc" name="popc">
+                    <label for="popc">Popcornmachine</label>
+                    <input type="checkbox" id="stoelen" name="stoelen">
+                    <label for="stoelen">20 extra stoelen</label>
+                    <input type="checkbox" id="tafel" name="tafel">
+                    <label for="tafel">2 extra tafels</label>
+                    <input type="checkbox" id="drank" name="drank">
+                    <label for="drank">Drankconsumpties</label>
+                    <input type="checkbox" id="snacks" name="snacks">
+                    <label for="snacks">Snacks</label>
+                </fieldset>
+                <button id="naar4">Ga verder</button>
+            </div>
+            <div id="fase4">
+                <div id="overzicht"></div>
+                <p>De reservatie is pas definitief na de bevestiging door Ons Jeugdhuis. Deze kan je binnen de week verwachten via e-mail.</p>
+                <button id="naar1">Nieuwe aanvraag</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <img src="images/logo-beeld.svg" alt="Logo Ons Jeugdhuis">
+            <address>
+                <p>Ons Jeugdhuis</p>
+                <p>Drongensesteenweg 125</p>
+                <p>8500 Kortrijk</p>
+            </address>
+        </div>
+        <div>
+            <a href="https://www.vlaanderen.be/cjm/nl/informatie-covid-19/maatregelen-jeugd" target="_blank"><i class="fas fa-virus"></i></a>
+            <a href="kalender.html"><i class="far fa-calendar"></i></a>
+            <a href = "mailto:onsjeugdhuis@ehotmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="contact.html"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+        <a href="#top"><i class="fas fa-angle-up"></i></a>
+    </footer>
+</body>
+</html>

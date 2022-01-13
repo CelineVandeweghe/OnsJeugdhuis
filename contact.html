@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neem contact op met Ons Jeugdhuis</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <script src="https://kit.fontawesome.com/2b9b9b81f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/screen2.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/kaart.css">
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/screen.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/logo.svg" alt="Logo Ons Jeugdhuis">
+            <img src="images/afbeelding6.jpg" alt="Foto jongeren bij grafitti">
+        </div>
+        <div id="hamburger">
+            <div id="test">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="overons.html">home</a></li>
+                <li><a href="overons.html">over ons</a></li>
+                <li><a href="agenda.html">kalender</a></li>
+                <li><a href="zaalverhuur.html">zaalverhuur</a></li>
+                <li id="here">contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       <h1>Contact</h1>
+       <div>
+            <div>
+                <div id="map"></div>
+                    <span id="marker"><i class="fas fa-map-marker-alt"></i></span>
+                    <span id="marker2"><i class="fas fa-map-marker-alt"></i></span>
+                    <script	src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+                    <script src="assets/js/script.js"></script>
+                </div>
+            <div>
+                <p>Ons Jeugdhuis kan je op volgende manieren bereiken:</p>
+                <ul>
+                    <li id="tel"><strong>telefoon:</strong> 0483 88 22 34</li>
+                    <li id="langskomen"><strong>eens langs te komen:</strong> <address>Ons Jeugdhuis Drongensesteenweg 125 8500 Kortrijk</address>
+                            <p><strong>Tijdens de openingsuren:</strong></p>
+                            <ul>
+                                <li>Woensdag 12u - 22u</li>
+                                <li>Donderdag 16u - 23u</li>
+                                <li>Vrijdag en zaterdag 19u - 01u</li>
+                            </ul>
+                            <p>Of tijdens een <a href="/agenda.html">activiteit</a></p></li>
+                    <li id="contact"><strong>via het contactformulier hieronder</strong></li>
+                    <li id="social"><strong>of via Facebook, Instagram of Whatsapp</strong>
+                        <ul>
+                            <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://wa.me/32483882234" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <form>
+            <label for="lastname">Familienaam</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Doe" required>
+            <label for="firstname">Voornaam</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Jane" required>
+            <label for="mail">E-mailadres</label>
+            <input type="email" id="mail" name="mail" placeholder="janedoe@hotmail.com" required>
+            <label for="tele">Telefoonnummer</label>
+            <input type="tel" id="tele" name="tele" placeholder="0452678755" required>
+            <label for="bericht">Bericht</label>
+            <textarea id="bericht" name="bericht" placeholder="Typ hier uw bericht" required></textarea>
+            <input type="submit" id="submit">
+            <p id="bedankt"></p>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <img src="images/logo-beeld.svg" alt="Logo Ons Jeugdhuis">
+            <address>
+                <p>Ons Jeugdhuis</p>
+                <p>Drongensesteenweg 125</p>
+                <p>8500 Kortrijk</p>
+            </address>
+        </div>
+        <div>
+            <a href="https://www.vlaanderen.be/cjm/nl/informatie-covid-19/maatregelen-jeugd" target="_blank"><i class="fas fa-virus"></i></a>
+            <a href="kalender.html"><i class="far fa-calendar"></i></a>
+            <a href = "mailto:onsjeugdhuis@ehotmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="contact.html"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+        <a href="#top"><i class="fas fa-angle-up"></i></a>
+    </footer>
+</body>
+</html>

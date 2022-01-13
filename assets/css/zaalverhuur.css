@@ -1,0 +1,50 @@
+main{
+    margin-right: 13vw;
+    margin-left: 13vw;
+}
+
+main div{
+    display: flex;
+    justify-content: space-between;
+}
+
+main img{
+    width: 22vw;
+    height: 20vw;
+    object-fit: cover;
+}
+
+main figcaption{
+    text-align: center;
+    background-color: #EB5F5E;
+    margin-top: 0.5vw;
+    padding-top: 2.5vw;
+    height: 4vw;
+    font-size: 1.4vw;
+}
+
+main figcaption:hover{
+    background-color: #F4A6A6;
+}
+
+@media all and (max-width: 37rem){
+    main{
+        margin: 0;
+    }
+
+    main div{
+        display: block;
+    }
+
+    main img{
+        width: 100vw;
+        height: 30vw;
+        margin-bottom: 0vw;
+    }
+
+    main figcaption, main figcaption:hover{
+        margin-bottom: 4vw;
+        height: 5vw;
+    }
+
+}
